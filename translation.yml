@@ -1,0 +1,17 @@
+source_language: en
+target_languages: [cs, da, de, es, fi, fr, it, ja, ko, nb, nl, pl, pt-BR, pt-PT, sv, th, tr, vi, zh-CN, zh-TW]
+non_blocking_languages: []
+async_pr_mode: per_pr
+translation_profile: apps_and_themes
+components:
+  - name: buyer
+    audience: buyer
+    scheme: 'apps-and-themes'
+    paths:
+      - theme-app-extension/locales/{{language}}.json
+  - name: merchant
+    target_languages: [cs, da, de, es, fi, fr, it, ja, ko, nb, nl, pl, pt-BR, pt-PT, sv, th, tr, vi, zh-CN, zh-TW]
+    audience: merchant
+    scheme: 'apps-and-themes'
+    paths:
+      - theme-app-extension/locales/{{language}}.schema.json
